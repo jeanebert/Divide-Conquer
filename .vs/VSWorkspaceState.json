@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MathMania"
+    "\\MathMania",
+    "\\MathMania\\Views",
+    "\\MathMania\\Views\\Home"
   ],
-  "SelectedNode": "\\MathMania.sln",
+  "SelectedNode": "\\MathMania\\Views\\Home\\About.cshtml",
   "PreviewInSolutionExplorer": false
 }

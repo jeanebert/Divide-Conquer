@@ -15,16 +15,11 @@
         <h2>Coose a topic below to start playing!</h2>
         <style>
             body{
-                background-image: url(.../../Images/math1.PNG);
+                background-image: url(../../Images/math1.PNG);
             }
-        </style>
-    </div>
-    <div id="buttons">
-        <p>
-            @Html.ActionLink("Addition", "Add",
-        null, htmlAttributes: new { @class = "addbtn" })
-        </p>
-        <style type="text/css">
+            #buttons {
+                display: inline-block;
+            }
             a.addbtn {
                 background-color: deepskyblue;
                 color: black;
@@ -32,12 +27,6 @@
                 padding: 24px 48px 24px 48px;
                 text-decoration: none;
             }
-        </style>
-        <p>
-            @Html.ActionLink("Subtraction", "Sub",
-        null, htmlAttributes: new { @class = "subbtn" })
-        </p>
-        <style type="text/css">
             a.subbtn {
                 background-color: orangered;
                 color: black;
@@ -45,12 +34,6 @@
                 padding: 24px 40px 24px 40px;
                 text-decoration: none;
             }
-        </style>
-        <p>
-            @Html.ActionLink("Comparison", "Com",
-        null, htmlAttributes: new { @class = "combtn" })
-        </p>
-        <style type="text/css">
             a.combtn {
                 background-color: yellow;
                 color: black;
@@ -58,12 +41,6 @@
                 padding: 24px 38px 24px 38px;
                 text-decoration: none;
             }
-        </style>
-        <p>
-            @Html.ActionLink("Money", "Money",
-        null, htmlAttributes: new { @class = "moneybtn" })
-        </p>
-        <style type="text/css">
             a.moneybtn {
                 background-color: green;
                 color: black;
@@ -71,12 +48,22 @@
                 padding: 24px 53px 24px 53px;
                 text-decoration: none;
             }
+
         </style>
     </div>
-    <style>
-        #buttons{
-            display: inline-block;
-        }
-    </style>
+    <div id="buttons">
+        
+            @Html.ActionLink("Addition", "Add",
+        null, htmlAttributes: new { @class = "addbtn" })
+        
+            @Html.ActionLink("Subtraction", "Sub",
+        null, htmlAttributes: new { @class = "subbtn" })
+    
+            @Html.ActionLink("Comparison", "Com",
+        null, htmlAttributes: new { @class = "combtn" })
+
+            @Html.ActionLink("Money", "Money",
+        null, htmlAttributes: new { @class = "moneybtn" })
+    </div>
 </body>
 </html>
