@@ -8,51 +8,87 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Welcome to Math Mania</title>
+    <style>
+        #content {
+            position: center;
+            padding-top: 40px;
+        }
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: x-large;
+        }
+        h2 {
+            font-family: 'SketchFlow Print';
+            font-size:medium;
+        }
+        #image {
+            position: absolute;
+            padding-top: 100px;
+            padding-left: 40px;
+        }
+
+        body {
+            background-color: #107010;
+            background-image: url(../../Images/Capture.PNG);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-left: 300px;
+        }
+
+        #buttons {
+            display: inline-block;
+            position: center;
+            padding-top: 400px;
+        }
+
+        a.addbtn {
+            background-color: deepskyblue;
+            color: black;
+            display: inline-block;
+            padding: 24px 48px 24px 48px;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+
+        a.subbtn {
+            background-color: orangered;
+            color: black;
+            display: inline-block;
+            padding: 24px 40px 24px 40px;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+
+        a.combtn {
+            background-color: yellow;
+            color: black;
+            display: inline-block;
+            padding: 24px 38px 24px 38px;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+
+        a.moneybtn {
+            background-color: green;
+            color: black;
+            display: inline-block;
+            padding: 24px 53px 24px 53px;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
+
 <body>
     <div id="content">
-        <h1>Welcome to Math Mania, where the fun begins!</h1>
-        <h2>Coose a topic below to start playing!</h2>
-        <style>
-            body{
-                background-image: url(../../Images/math1.PNG);
-            }
-            #buttons {
-                display: inline-block;
-            }
-            a.addbtn {
-                background-color: deepskyblue;
-                color: black;
-                display: inline-block;
-                padding: 24px 48px 24px 48px;
-                text-decoration: none;
-            }
-            a.subbtn {
-                background-color: orangered;
-                color: black;
-                display: inline-block;
-                padding: 24px 40px 24px 40px;
-                text-decoration: none;
-            }
-            a.combtn {
-                background-color: yellow;
-                color: black;
-                display: inline-block;
-                padding: 24px 38px 24px 38px;
-                text-decoration: none;
-            }
-            a.moneybtn {
-                background-color: green;
-                color: black;
-                display: inline-block;
-                padding: 24px 53px 24px 53px;
-                text-decoration: none;
-            }
-
-        </style>
+        <header>
+            <h1>Welcome to Math Mania, where the fun begins!</h1>
+            <h2>Choose a topic below to start playing!</h2>
+        </header>
     </div>
+
     <div id="buttons">
-        
             @Html.ActionLink("Addition", "Add",
         null, htmlAttributes: new { @class = "addbtn" })
         
